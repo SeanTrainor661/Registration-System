@@ -4,9 +4,14 @@ Overview
 This is a Spring Boot web application with MySQL integration that allows users to register their details through a web form. It includes:
 
 •	Form validation (ensuring required fields are filled correctly).
+
 •	Duplicate email prevention.
+
 •	Persistent MySQL database storage.
+
 •	A success page after registration.
+
+
 ________________________________________
 Setup & Installation
 
@@ -17,8 +22,11 @@ Follow these steps to set up and run the application on your local machine.
 Ensure you have the following installed:
 
 •	Java 17+
+
 •	Maven
+
 •	MySQL Server
+
 
 2️. Create the MySQL Database
 
@@ -26,7 +34,9 @@ Run the provided SQL script, “setup-database.sql”, to set up the required da
 This will:
 
 •	Create a MySQL database called aeroparker.
+
 •	Create a customers table with the required fields.
+
 
 3️. Set Up Environment Variables
 
@@ -34,18 +44,23 @@ Instead of hardcoding database credentials, set an environment variable for the 
 
 •	Windows (PowerShell):
 $env:DB_PASSWORD="MyPassword1"
+
 •	macOS/Linux:
 export DB_PASSWORD=" MyPassword1 "
 
+
 4. Run the Application
-5. 
+ 
 Start the Spring Boot server using Maven:
 
 ./mvnw.cmd spring-boot:run   # Windows
+
 ./mvnw spring-boot:run       # macOS/Linux
 
 Once running, visit:
 http://localhost:8080/registration
+
+
 ________________________________________
  Project Structure
 
